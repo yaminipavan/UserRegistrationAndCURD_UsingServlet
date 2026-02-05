@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Book | Book Management</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .update-container {
+        background: #ffffff;
+        width: 420px;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .update-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .info-text {
+        text-align: center;
+        color: #3182ce;
+        font-size: 14px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .form-group input:focus {
+        border-color: #4facfe;
+        outline: none;
+    }
+
+    .update-btn {
+        width: 100%;
+        padding: 11px;
+        background: #3182ce;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .update-btn:hover {
+        background: #2b6cb0;
+    }
+
+    .back-link {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .back-link a {
+        color: #3182ce;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .back-link a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="update-container">
+    <h2>Update Book Details</h2>
+
+    <div class="info-text">
+        ℹ Enter the Book Code and update price & quantity
+    </div>
+
+    <form action="update" method="post">
+
+        <div class="form-group">
+            <label for="bcode">Book Code</label>
+            <input type="text" name="bcode" id="bcode" required>
+        </div>
+
+        <div class="form-group">
+            <label for="bprice">New Book Price</label>
+            <input type="text" name="bprice" id="bprice" required>
+        </div>
+
+        <div class="form-group">
+            <label for="bqty">New Book Quantity</label>
+            <input type="text" name="bqty" id="bqty" required>
+        </div>
+
+        <input type="submit" value="Update Book" class="update-btn">
+
+        <div class="back-link">
+            <a href="index.html">⬅ Back to Dashboard</a>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

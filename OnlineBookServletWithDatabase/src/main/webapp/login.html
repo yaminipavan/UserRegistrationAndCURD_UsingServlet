@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login | My Application</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-container {
+        background: #ffffff;
+        width: 350px;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .login-container h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .form-group input:focus {
+        border-color: #667eea;
+        outline: none;
+    }
+
+    .login-btn {
+        width: 100%;
+        padding: 10px;
+        background: #667eea;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .login-btn:hover {
+        background: #5a67d8;
+    }
+
+    .register-link {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .register-link a {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .register-link a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="login-container">
+    <h2>User Login</h2>
+
+    <form action="login" method="post">
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" id="uname" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pword">Password</label>
+            <input type="password" name="pword" id="pword" required>
+        </div>
+
+        <input type="submit" value="Login" class="login-btn">
+
+        <div class="register-link">
+            New User? <a href="Register.html">Register here</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
